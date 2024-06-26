@@ -1,32 +1,5 @@
 #include "Leetcode_Recursion.h"
 
-/*
-static void printReverse(const char* str) {
-	if (!*str)
-		return;
-	printReverse(str + 1);
-	putchar(*str);
-}
-
-int main()
-{
-	const char* message = "Hello, World!";
-	std::cout << "Original: " << message << std::endl;
-	std::cout << "Reversed: ";
-	printReverse(message);
-	std::cout << std::endl;
-
-	return 0;
-}
-
-static void reverseInPlace(std::string& str) {
-	for (int i = 0; i <= (str.size() - 1) / 2; i++) {
-		char left = str[i];
-		str[i] = str[(str.size() - 1) - i];
-		str[(str.size() - 1) - i] = left;
-	}
-}*/
-
 static std::vector<char> stringToVector(std::string str) {
 	std::vector<char> vChar{};
 	for (char c : str) {
@@ -42,7 +15,6 @@ static std::string vectorToString(std::vector<char> vector) {
 	}
 	return str;
 }
-
 
 static void reverseString(std::vector<char>& vector) {
 	for (int i = 0; i <= (vector.size() - 1) / 2; i++) {
